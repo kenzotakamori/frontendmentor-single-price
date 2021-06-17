@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+html {
+  background-color: #e5eff5;
+}
+
+body {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 1rem;
+}
+@media screen and (max-width: 800px) {
+  body {
+    grid-template-columns: unset;
+  }
+}
+
+section {
+  padding: 2rem;
+}
+
+section#join-community {
+  grid-column: 1/3;
+  background: white;
+}
+section#join-community h2 {
+  font-size: 1.8rem;
+  color: #2ab2af;
+  font-weight: 700;
+}
+section#join-community p {
+  color: #98a6bd;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+section#join-community p:first-of-type {
+  color: #c0df34;
+}
+
+section#subscription {
+  background-color: #2ab2af;
+  color: white;
+}
+
+section#why-us {
+  background-color: #2ab2af;
+  color: white;
+  -webkit-box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+}
+
+/*# sourceMappingURL=style.css.map */
