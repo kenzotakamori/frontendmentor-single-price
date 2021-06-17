@@ -18,17 +18,23 @@ body {
   place-self: center;
   grid-template-columns: repeat(2, 1fr);
   width: 90vw;
-  max-width: 825px;
+  max-width: 790px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media screen and (max-width: 800px) {
   body {
     grid-template-columns: unset;
+    margin: 5rem 0;
   }
 }
 
 section {
   padding: 3rem;
+}
+@media screen and (max-width: 800px) {
+  section {
+    padding: 2rem;
+  }
 }
 
 section#join-community {
@@ -64,6 +70,8 @@ section#subscription {
   background-color: #2ab2af;
   color: white;
   border-radius: 0 0 0 1rem;
+  display: grid;
+  grid-auto-flow: row;
 }
 section#subscription h2 {
   font-size: 1.3rem;
@@ -79,8 +87,9 @@ section#subscription .month-price span {
   opacity: 0.4;
 }
 section#subscription button {
+  margin-top: auto;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   border-radius: 5px;
   border: unset;
   background-color: #c0df34;
@@ -95,6 +104,7 @@ section#subscription button a {
 @media screen and (max-width: 800px) {
   section#subscription {
     border-radius: unset;
+    min-height: 270px;
   }
 }
 
@@ -108,9 +118,12 @@ section#why-us {
 section#why-us h2 {
   font-size: 1.3rem;
   opacity: 0.9;
+  margin-bottom: 1rem;
 }
 section#why-us ul {
   list-style-type: none;
+  line-height: 1.5rem;
+  opacity: 0.6;
 }
 @media screen and (max-width: 800px) {
   section#why-us {
