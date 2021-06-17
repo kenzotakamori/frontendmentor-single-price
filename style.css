@@ -19,6 +19,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   width: 90vw;
   max-width: 825px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @media screen and (max-width: 800px) {
   body {
@@ -47,9 +48,11 @@ section#join-community p {
   font-weight: 700;
   padding-top: 0.5rem;
   font-size: 1.2rem;
+  font-weight: 400;
 }
 section#join-community p:first-of-type {
   color: #c0df34;
+  font-weight: 700;
 }
 @media screen and (max-width: 800px) {
   section#join-community {
@@ -61,6 +64,33 @@ section#subscription {
   background-color: #2ab2af;
   color: white;
   border-radius: 0 0 0 1rem;
+}
+section#subscription h2 {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+section#subscription .month-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+section#subscription .month-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.4;
+}
+section#subscription button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  border: unset;
+  background-color: #c0df34;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section#subscription button a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
 }
 @media screen and (max-width: 800px) {
   section#subscription {
@@ -74,6 +104,13 @@ section#why-us {
   border-radius: 0 0 1rem 0;
   -webkit-box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
   box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.2);
+}
+section#why-us h2 {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+section#why-us ul {
+  list-style-type: none;
 }
 @media screen and (max-width: 800px) {
   section#why-us {
